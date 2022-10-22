@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Logo = () => {
+const Logo = ({darkMode}) => {
   return (
-    <a className="navbar-brand ps-3" href="#!">
+    <a className={`navbar-brand ps-3 ${darkMode ? 'text-white' : 'text-dark'}`} href="#!">
       Workshop App
     </a>
   )
